@@ -4,16 +4,15 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(void) {
-	char c;
-	int i;
 	
-	printf("input a number :");
+	char c;
+	
+	printf("enter a character : ");
 	scanf("%c", &c);
 	
-	i=c-'0';  //c에 저장된 문자 값을 숫자로 변환하는 식 
-	printf("The input number ASCII is %i\n",c);
-	printf("The input number is %i\n", i);
-	
+	printf("The next character of %c (%i) is %c (%i)",c,c,c+1,c+1);
+
 	system("Pause");
 	return 0;
+	
 }
