@@ -4,16 +4,16 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(void) {
-	int input_int;
-	float input_float;
+	char c;
+	int i;
 	
-	printf("enter an integer : ");
-	scanf("%d", &input_int);
+	printf("input a number :");
+	scanf("%c", &c);
 	
-	printf("enter a float : ");
-	scanf("%f", &input_float);
+	i=c-'0';  //c에 저장된 문자 값을 숫자로 변환하는 식 
+	printf("The input number ASCII is %i\n",c);
+	printf("The input number is %i\n", i);
 	
-	printf("integer : %d, float : %f\n", input_int, input_float);
-	
+	system("Pause");
 	return 0;
 }
